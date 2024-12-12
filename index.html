@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iván Díaz - Academic Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #ffffff;
+            color: #222;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #004080;
+            padding: 10px 0;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        main {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 20px;
+            background: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .profile-container {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 30px;
+        }
+        .profile-container img {
+            border-radius: 5px;
+            width: 200px;
+            height: auto;
+            margin-right: 20px;
+        }
+        .profile-links {
+            margin-top: 10px;
+        }
+        .profile-links ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        .profile-links li {
+            margin: 5px 0;
+        }
+        a {
+            color: #005c99;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .profile-title {
+            font-size: 1.2em;
+            font-weight: bold;
+            margin: 0;
+        }
+        .profile-subtitle {
+            font-size: 1em;
+            font-style: italic;
+            margin: 5px 0 15px 0;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="publications.html">Publications</a>
+        <a href="team.html">Team</a>
+        <a href="software.html">Software</a>
+    </nav>
+    <main>
+        <div class="profile-container">
+            <div>
+                <img src="assets/profile.jpg" alt="Profile Picture">
+                <div class="profile-links">
+                    <ul>
+                        <li><a href="https://scholar.google.com/citations?user=Ca3-le8AAAAJ&hl=en" target="_blank">Google Scholar</a></li>
+                        <li><a href="https://arxiv.org/a/diaz_i_2.html" target="_blank">arXiv</a></li>
+                        <li><a href="assets/cv.pdf" target="_blank">Curriculum Vitae (PDF)</a></li>
+                        <li><a href="https://x.com/ildiazm?lang=en" target="_blank">Twitter</a></li>
+                        <li><a href="https://bsky.app/profile/idiaz.bsky.social" target="_blank">Bluesky</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <p class="profile-title">Iván Díaz</p>
+                <p class="profile-subtitle">Associate Professor of Biostatistics<br>NYU Grossman School of Medicine</p>
+                <p>My research focuses on the development of non-parametric statistical methods for causal inference from observational and randomized studies with complex datasets, using machine learning. This includes but is not limited to mediation analysis, methods for continuous exposures, longitudinal data including survival analysis, and efficiency guarantees with covariate adjustment in randomized trials. I am also interested in general semi-parametric theory, machine learning, and high-dimensional data.</p>
+                <p>My substantive research has so far focused on clinical applications, specifically neurology, substance use disorder, pulmonary and critical care, and precision medicine for cancer.</p>
+                <p>I graduated from a PhD in Biostatistics from the University of California at Berkeley, under the direction of <a href="https://vanderlaan-lab.org/">Mark van der Laan</a>. My dissertation was awarded the Erich L. Lehmann to an outstanding dissertation in theoretical statistics.</p>
+                <p>I was a postdoctoral fellow at the Department of Biostatistics at the Johns Hopkins Bloomberg School of Public Health, where I worked with <a href="https://mrosenblumbiostat.wordpress.com/">Michael Rosenblum</a> on a number of projects, including methods for covariate adjustment in randomized trials.</p>
+                <p>I was then an Assistant Professor at Weill Cornell Medicine for 6 years, after which I joined NYU Grossman School of Medicine.</p>
+                <p>I was born and raised in Colombia. I graduated from Universidad Nacional de Colombia with an undergraduate and an MS degree in Statistics.</p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

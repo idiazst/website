@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software - Iván Díaz</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #ffffff;
+            color: #222;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #004080;
+            padding: 10px 0;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        main {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 20px;
+            background: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #004080;
+        }
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        li {
+            margin: 10px 0;
+        }
+        a {
+            color: #005c99;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="publications.html">Publications</a>
+        <a href="team.html">Team</a>
+        <a href="software.html">Software</a>
+    </nav>
+    <main>
+      <h2>Software</h2>
+      Here is a list of R packages developed
+      by  <a href="https://www.nicholastwilliams.com/"
+      target="_blank">Nick Williams</a> implementing some of the
+      methods that our team have developed:
+        <section>
+            <h3><a href="https://github.com/nt-williams/lmtp" target="_blank">lmtp</a></h3>
+            <p>R package implementing general estimators for the generalized g-computation formula. Some features include:</p>
+            <ul>
+                <li>Estimation of causal effects for static interventions and modified treatment policies in longitudinal data</li>
+                <li>Support for continuous, categorical, and binary exposures</li>
+                <li>Integration with Super Learner ensemble learners for flexible machine learning estimation of nuisance parameters</li>
+                <li>Handles right-censored data</li>
+            </ul>
+        </section>
+	<section>
+            <h3><a href="https://github.com/nt-williams/adjrct" target="_blank">adjrct</a></h3>
+            <p>R package implementing various
+            estimators for covariate adjustment in randomized studies. Some features include:</p>
+            <ul>
+                <li>Estimation of covariate adjusted effects for randomized trials, with efficiency guarantees</li>
+                <li>Estimation of effects for ordinal and time-to-event endpoints</li>
+                <li>Incorporation of machine learning for maximum efficiency gains</li>
+                <li>Handles right-censored time-to-event endpoints</li>
+            </ul>
+        </section>
+	<section>
+            <h3><a href="https://github.com/nt-williams/crumble" target="_blank">crumble</a></h3>
+            <p>R package implementing general estimators
+            for mediation analysis and path analysis:</p>
+            <ul>
+                <li>Estimation of multiple effects in the literature,
+                such as natural direct and indirect effects,
+                randomized interventional effects, recanting twin
+                effects, separable effects, etc.</li>
+                <li>Incorporates high-dimensional (e.g., omics)
+                mediators and confounders</li>
+                <li>Deep learning estimation of Riesz representers</li>
+            </ul>
+        </section>
+	<section>
+            <h3><a href="https://github.com/nt-williams/lcm"
+            target="_blank">lcm</a> and <a href="https://github.com/nt-williams/lcmmtp"
+            target="_blank">lcmmtp</a></h3>
+            <p>R package implementing general estimators
+            for mediation analysis with time-varying mediators and treatments:</p>
+            <ul>
+                <li>Incorporates high-dimensional
+                  confounders (but only categorical mediators)</li>
+	        <li>Integration with Super Learner ensemble learners for flexible machine learning estimation of nuisance parameters</li>
+
+            </ul>
+        </section>
+    </main>
+</body>
+</html>

@@ -20,7 +20,6 @@
             justify-content: center;
             background-color: #004080;
             padding: 10px 0;
-            flex-wrap: wrap;
         }
 
         nav a {
@@ -50,6 +49,7 @@
             flex-wrap: wrap;
             align-items: flex-start;
             margin-bottom: 30px;
+            text-align: left;
         }
 
         .profile-container img {
@@ -96,19 +96,12 @@
 
         /* Responsive Design for Mobile */
         @media (max-width: 768px) {
-            nav {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            nav a {
-                margin: 10px 0;
+            main {
+                padding: 15px;
             }
 
             .profile-container {
                 flex-direction: column;
-                align-items: center;
-                text-align: center;
             }
 
             .profile-container img {
@@ -117,10 +110,6 @@
 
             .profile-container div {
                 max-width: 100%;
-            }
-
-            main {
-                padding: 15px;
             }
 
             .profile-title {
@@ -148,7 +137,6 @@
                     <ul>
                         <li><a href="https://scholar.google.com/citations?user=Ca3-le8AAAAJ&hl=en" target="_blank">Google Scholar</a></li>
                         <li><a href="https://arxiv.org/a/diaz_i_2.html" target="_blank">arXiv</a></li>
-                        <li><a href="assets/cv.pdf" target="_blank">Curriculum Vitae (PDF)</a></li>
                         <li><a href="https://x.com/ildiazm?lang=en" target="_blank">Twitter</a></li>
                         <li><a href="https://bsky.app/profile/idiaz.bsky.social" target="_blank">Bluesky</a></li>
                     </ul>

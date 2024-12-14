@@ -13,67 +13,123 @@
             background-color: #ffffff;
             color: #222;
         }
+
+        /* Navigation Bar */
         nav {
             display: flex;
             justify-content: center;
             background-color: #004080;
             padding: 10px 0;
+            flex-wrap: wrap;
         }
+
         nav a {
             color: #fff;
             text-decoration: none;
             margin: 0 15px;
             font-weight: bold;
         }
+
         nav a:hover {
             text-decoration: underline;
         }
+
+        /* Main Container */
         main {
-            max-width: 900px;
-            margin: 30px auto;
+            max-width: 90%;
+            margin: 20px auto;
             padding: 20px;
             background: #f9f9f9;
             border-radius: 8px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
+
+        /* Profile Container */
         .profile-container {
             display: flex;
+            flex-wrap: wrap;
             align-items: flex-start;
             margin-bottom: 30px;
         }
+
         .profile-container img {
             border-radius: 5px;
-            width: 200px;
+            width: 150px;
             height: auto;
-            margin-right: 20px;
+            margin-bottom: 15px;
         }
+
         .profile-links {
             margin-top: 10px;
         }
+
         .profile-links ul {
             list-style-type: none;
             padding: 0;
             margin: 0;
         }
+
         .profile-links li {
             margin: 5px 0;
         }
+
         a {
             color: #005c99;
             text-decoration: none;
         }
+
         a:hover {
             text-decoration: underline;
         }
+
         .profile-title {
-            font-size: 1.2em;
+            font-size: 1.5em;
             font-weight: bold;
             margin: 0;
         }
+
         .profile-subtitle {
-            font-size: 1em;
+            font-size: 1.2em;
             font-style: italic;
             margin: 5px 0 15px 0;
+        }
+
+        /* Responsive Design for Mobile */
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav a {
+                margin: 10px 0;
+            }
+
+            .profile-container {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .profile-container img {
+                margin-bottom: 20px;
+            }
+
+            .profile-container div {
+                max-width: 100%;
+            }
+
+            main {
+                padding: 15px;
+            }
+
+            .profile-title {
+                font-size: 1.3em;
+            }
+
+            .profile-subtitle {
+                font-size: 1em;
+            }
         }
     </style>
 </head>

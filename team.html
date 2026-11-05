@@ -39,6 +39,30 @@
         h2 {
             color: #004080;
         }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            table-layout: fixed;
+            margin-bottom: 30px;
+        }
+        caption {
+            text-align: left;
+            margin-bottom: 8px;
+        }
+        th, td {
+            text-align: left;
+            vertical-align: top;
+            padding: 10px 12px;
+            border-bottom: 1px solid #ddd;
+            overflow-wrap: anywhere;
+        }
+        th:first-child, td:first-child {
+            width: 38%;
+            padding-left: 0;
+        }
+        th:last-child, td:last-child {
+            padding-right: 0;
+        }
         ul {
             list-style-type: disc;
             padding-left: 20px;
@@ -66,67 +90,61 @@
         <h1>Team</h1>
         <section>
             <h2>Current PhD Students</h2>
-            <ul>
-                <li>Yu Huang — Biostatistics, NYU Grossman School of Medicine</li>
-                <li>Yili Du — Biostatistics, NYU Grossman School of Medicine</li>
-                <li><a href="https://cds.nyu.edu/team/jiayi-cheng/">Jiayi Cheng</a> — NYU Center for Data Science</li>
-                <li>Li (Richard) Liu — Biostatistics, NYU Grossman School of Medicine</li>
-                <li>Jiacheng Ge — Biostatistics, NYU Grossman School of Medicine</li>
-                <li>Xinyi (Emily) Zhang — Biostatistics, NYU Grossman School of Medicine</li>
-                <li>Leon Segovia — Biostatistics, NYU Grossman School of Medicine</li>
-            </ul>
+            <table>
+                <caption>NYU Grossman School of Medicine</caption>
+                <thead><tr><th scope="col">Name</th><th scope="col">Program</th></tr></thead>
+                <tbody>
+                    <tr><td>Yu Huang</td><td>Biostatistics</td></tr>
+                    <tr><td>Yili Du</td><td>Biostatistics</td></tr>
+                    <tr><td>Li (Richard) Liu</td><td>Biostatistics</td></tr>
+                    <tr><td>Jiacheng Ge</td><td>Biostatistics</td></tr>
+                    <tr><td>Xinyi (Emily) Zhang</td><td>Biostatistics</td></tr>
+                    <tr><td>Leon Segovia</td><td>Biostatistics</td></tr>
+                </tbody>
+            </table>
         </section>
         <section>
             <h2>Current Postdoctoral Fellows</h2>
-            <ul>
-                <li>Ariadne Rivera-Aguirre</li>
-                <li><a href="https://herbsusmann.com/" target="_blank">Herbert Susmann</a></li>
-                <li><a href="https://alecmcclean.github.io/"
-                target="_blank">Alec McClean</a></li>
-                <li>Vishwali Mhasawade</li>
-            </ul>
+            <table>
+                <thead><tr><th scope="col">Name</th><th scope="col">Affiliation</th></tr></thead>
+                <tbody>
+                    <tr><td>Ariadne Rivera-Aguirre</td><td>NYU Grossman School of Medicine</td></tr>
+                </tbody>
+            </table>
         </section>
         <section>
             <h2>Visiting Students</h2>
-            <ul>
-                <li>Seyda-Betul Aydin — visiting student from Germany and Research Scholar in Population Health, NYU Grossman School of Medicine, October 2026–February 2027</li>
-            </ul>
+            <table>
+                <thead><tr><th scope="col">Name</th><th scope="col">Program and Visit</th></tr></thead>
+                <tbody>
+                    <tr><td>Seyda-Betul Aydin</td><td>Visiting student and Research Scholar, Population Health, NYU Grossman School of Medicine<br>October 2026–February 2027</td></tr>
+                </tbody>
+            </table>
         </section>
         <section>
             <h2>Past Students and Research Trainees</h2>
-            <ul>
-                <li><a href="https://scholar.google.com/citations?user=EE0vL8kAAAAJ&hl=en" target="_blank">Axel Martin</a> — PhD in Biostatistics, NYU Grossman School of Medicine, September 2026; co-advised with Michele Santacatterina</li>
-                <li>Katherine Hoffman — Research Biostatistician, Weill Cornell Medicine (2018–2022)</li>
-                <li><a href="https://www.nicholastwilliams.com/" target="_blank">Nicholas Williams</a> — Research Biostatistician, Weill Cornell Medicine (2020–2021)</li>
-                <li>Ji-Eun Park — MS student, Weill Cornell Medicine (2019); subsequently entered the PhD program at UNC Chapel Hill</li>
-                <li>Chenghuiyun Xu — MS student, Weill Cornell Medicine (2019); subsequently entered the PhD program at UC Davis</li>
-                <li>Hanchao Zhang — MS student, Weill Cornell Medicine (2019); subsequently entered the PhD program at NYU</li>
-            </ul>
+            <table>
+                <thead><tr><th scope="col">Name</th><th scope="col">Current Affiliation</th></tr></thead>
+                <tbody>
+                    <tr><td><a href="https://scholar.google.com/citations?user=EE0vL8kAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">Axel Martin</a></td><td>Memorial Sloan Kettering Cancer Center (incoming)</td></tr>
+                    <tr><td><a href="https://www.khstats.com/" target="_blank" rel="noopener noreferrer">Katherine Hoffman</a></td><td>University of Washington</td></tr>
+                    <tr><td><a href="https://www.linkedin.com/in/nicholas-williams-mph" target="_blank" rel="noopener noreferrer">Nicholas Williams</a></td><td>University of California, Berkeley; Columbia University</td></tr>
+                </tbody>
+            </table>
         </section>
         <section>
             <h2>Past Postdoctoral Fellows</h2>
-            <ul>
-                <li><a href="https://nimahejazi.org/" target="_blank">Nima Hejazi</a></li>
-                <li><a href="https://scholar.google.com/citations?user=qu4Q1IEAAAAJ&hl=en" target="_blank">Brian Gilbert</a></li>
-                <li>Tat-Thang Vo — University of Pennsylvania (2020–2023)</li>
-            </ul>
+            <table>
+                <thead><tr><th scope="col">Name</th><th scope="col">Current Affiliation</th></tr></thead>
+                <tbody>
+                    <tr><td><a href="https://herbsusmann.com/" target="_blank" rel="noopener noreferrer">Herbert Susmann</a></td><td>Trinity College Dublin</td></tr>
+                    <tr><td><a href="https://alecmcclean.github.io/" target="_blank" rel="noopener noreferrer">Alec McClean</a></td><td>Ataraxis AI</td></tr>
+                    <tr><td><a href="https://nimahejazi.org/" target="_blank" rel="noopener noreferrer">Nima Hejazi</a></td><td>Harvard T.H. Chan School of Public Health</td></tr>
+                    <tr><td><a href="https://scholar.google.com/citations?user=qu4Q1IEAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">Brian Gilbert</a></td><td>U.S. Food and Drug Administration (FDA)</td></tr>
+                    <tr><td><a href="https://vishwali.github.io/" target="_blank" rel="noopener noreferrer">Vishwali Mhasawade</a></td><td>Amazon</td></tr>
+                </tbody>
+            </table>
         </section>
-	<section>
-            <h2>Frequent Collaborators (Past and Current)</h2>
-            <ul>
-                <li><a href="https://kararudolph.github.io/"
-                       target="_blank">Kara Rudolph</a></li>
-		<li><a href="https://www.nicholastwilliams.com/"
-                       target="_blank">Nick Williams</a></li>
-		<li><a href="https://vivo.weill.cornell.edu/display/cwid-ejs9005"
-                target="_blank">Edward Schenck</a></li>
-                <li><a href="https://brainandmind.weill.cornell.edu/ctnu-director-dr-hooman-kamel"
-                target="_blank">Hooman Kamel</a></li>
-		<li><a href="https://www.wenbowu.me/"
-                target="_blank">Wenbo Wu</a></li>
-            </ul>
-        </section>
-
     </main>
 </body>
 </html>

@@ -18,8 +18,8 @@ from pylatexenc.latex2text import LatexNodes2Text
 ROOT = Path(__file__).resolve().parents[1]
 LATEX = LatexNodes2Text()
 SECTIONS = (
-    ("stats", "statistics", "Statistics"),
-    ("clinical", "clinical", "Clinical"),
+    ("stats", "statistics", "Statistics and Causal Inference Methodology"),
+    ("clinical", "clinical", "Clinical and Population Health Research"),
     ("tech", "preprints", "Preprints"),
 )
 CATEGORIES = ("stats", "clinical", "tech", "book", "discuss", "reports")
@@ -153,7 +153,6 @@ def generate_publications_html(bibfile_path, output_path):
     parts = [
         "",
         "        <h1>Publications</h1>",
-        '        <p><a href="assets/publications.bib" download>Download BibTeX</a></p>',
         '        <nav class="publication-sections" aria-label="Publication sections">',
     ]
     for tag, anchor, heading in SECTIONS:

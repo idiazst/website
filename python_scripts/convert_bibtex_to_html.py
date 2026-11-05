@@ -19,8 +19,8 @@ ROOT = Path(__file__).resolve().parents[1]
 LATEX = LatexNodes2Text()
 SECTIONS = (
     ("stats", "statistics", "Statistics and Causal Inference Methodology"),
-    ("clinical", "clinical", "Clinical and Population Health Research"),
     ("tech", "preprints", "Preprints"),
+    ("clinical", "clinical", "Clinical and Population Health Research"),
 )
 CATEGORIES = ("stats", "clinical", "tech", "book", "discuss", "reports")
 
